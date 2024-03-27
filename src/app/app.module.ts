@@ -21,9 +21,9 @@ import { StaticpagesModule } from './staticpages/staticpages.module';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule,
     BlogsModule,
-    StaticpagesModule
+    StaticpagesModule,
+    AppRoutingModule
   ],
   providers: [
     provideClientHydration()

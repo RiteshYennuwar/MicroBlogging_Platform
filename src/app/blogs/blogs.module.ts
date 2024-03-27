@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { BlogsRoutingModule } from './blogs-routing.module';
 import { BlogListComponent } from './blog-list/blog-list.component';
 import { BlogDetailsComponent } from './blog-details/blog-details.component';
 import { FeaturedBlogsComponent } from './featured-blogs/featured-blogs.component';
@@ -17,7 +18,8 @@ import { LatestBlogsComponent } from './latest-blogs/latest-blogs.component';
     LatestBlogsComponent
   ],
   imports: [
-    CommonModule
+    CommonModule,
+    BlogsRoutingModule
   ],
   exports: [
     LatestBlogsComponent

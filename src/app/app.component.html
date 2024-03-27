@@ -1,5 +1,5 @@
 <app-header></app-header>
-<app-banner></app-banner>
-<h1>MicroBlogging</h1>
-<app-latest-blogs></app-latest-blogs>
+<app-banner *ngIf="router.url=='/'"></app-banner>
+<app-latest-blogs *ngIf="router.url=='/'"></app-latest-blogs>
+<router-outlet></router-outlet>
 <app-footer></app-footer>
