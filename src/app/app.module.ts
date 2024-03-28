@@ -10,6 +10,9 @@ import { PagenotfoundComponent } from './pagenotfound/pagenotfound.component';
 
 import { BlogsModule } from './blogs/blogs.module';
 import { StaticpagesModule } from './staticpages/staticpages.module';
+import { AccountserviceService } from './account/accountservice.service';
+import { HttpClientModule, HttpClient } from '@angular/common/http';
+import { AccountModule } from './account/account.module';
 
 @NgModule({
   declarations: [
@@ -23,10 +26,14 @@ import { StaticpagesModule } from './staticpages/staticpages.module';
     BrowserModule,
     BlogsModule,
     StaticpagesModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule,
+    AccountModule,
+
   ],
   providers: [
-    provideClientHydration()
+    provideClientHydration(),
+    AccountserviceService
   ],
   bootstrap: [AppComponent]
 })
