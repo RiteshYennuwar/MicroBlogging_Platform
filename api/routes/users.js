@@ -41,7 +41,7 @@ router.post('/register', checkEmail,function(req, res, next) {
         name: req.body.Name,
         email: req.body.Email,
         password: hash,
-        role:'Author'
+        role:'Author' 
         
       });
      

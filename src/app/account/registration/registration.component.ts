@@ -39,7 +39,7 @@ export class RegistrationComponent implements OnInit {
   }
   createuserAccount(accinfo:Accountinfo) {
     this.accountservice.createaccount(accinfo).subscribe(
-      (resResult) => {
+      (resResult: any) => {
        let resp=JSON.stringify(resResult);
        console.log(resp);
         this.datasaved = true;
