@@ -3,12 +3,8 @@
 MicroBlogging_Platform is a web application for microblogging where users can register, login, and browse through blogs
 
 ## Working Video
-<div>
-  <video width="100%" height="auto" controls>
-    <source src="src/assets/demo.mp4" type="video/mp4">
-    Your browser does not support the video tag.
-  </video>
-</div>
+[![MicroBlogging Platform Demo](src/assets/thumbnail.png)](src/assets/demo.mp4)
+
 ## Technologies Used
 
 - Frontend: Angular
