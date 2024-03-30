@@ -1,8 +1,8 @@
 const mongoose = require('mongoose');
-mongoose.connect('mongodb+srv://yennuwarritesh:BNZmwbsgG026JVxh@blogging.ft4toqp.mongodb.net/?retryWrites=true&w=majority&appName=blogging', {useNewUrlParser: true, useUnifiedTopology: true, useCreateIndex: true});
-var conn = mongoose.Collection;
+mongoose.connect('mongodb+srv://yennuwarritesh:BNZmwbsgG026JVxh@blogging.ft4toqp.mongodb.net/?retryWrites=true&w=majority&appName=blogging');
+const conn = mongoose.Collection;
 
-var userSchema = new mongoose.Schema({
+const userSchema = new mongoose.Schema({
     name: {type:String, 
         required: true 
            },

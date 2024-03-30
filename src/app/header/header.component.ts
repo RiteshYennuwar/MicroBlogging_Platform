@@ -10,9 +10,8 @@ export class HeaderComponent implements OnInit {
   isloggedin=false;
   constructor( private router:Router) { 
 
-    if(localStorage.getItem('Loginuser')){
-      this.isloggedin=true;
-    }
+    if (typeof localStorage !== 'undefined' && localStorage.getItem('Loginuser')) {
+      this.isloggedin = true;}
 
   }
 
@@ -24,7 +23,9 @@ export class HeaderComponent implements OnInit {
       this.navbarCollapsed = !this.navbarCollapsed;
   }
   onLogout(){
-    localStorage.removeItem('Loginuser');
+    if (typeof localStorage !== 'undefined') {
+      localStorage.removeItem('Loginuser');
+    }
     this.isloggedin=false;
     this.router.navigate(['/']);
   }

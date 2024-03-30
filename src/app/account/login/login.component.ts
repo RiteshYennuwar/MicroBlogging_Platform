@@ -5,11 +5,6 @@ import {AccountserviceService} from '../accountservice.service';
 import {Userloginfo} from '../userloginfo';
 
 
-interface LoginResponse {
-  msg: string;
-  status: string;
-  // Define other properties if present in the response
-}
 
 @Component({
   selector: 'app-login',

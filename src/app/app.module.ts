@@ -24,15 +24,15 @@ import { AccountModule } from './account/account.module';
   ],
   imports: [
     BrowserModule,
+    HttpClientModule,
     BlogsModule,
     StaticpagesModule,
-    AppRoutingModule,
-    HttpClientModule,
     AccountModule,
+    AppRoutingModule,
 
   ],
   providers: [
-    provideClientHydration(),
+
     AccountserviceService
   ],
   bootstrap: [AppComponent]
